@@ -17,9 +17,9 @@ app.use(cors()); // Use this after the variable declaration
 app.use(express.json()); // tell the server to accept the json data from frontend
 
 //Signup and login
-app.use("/email", emailRoutes);
+app.use("/api/email", emailRoutes);
 
-app.get("/", (req, res) => {
+app.get("/api/", (req, res) => {
     res.send("Hello World!");
 });
 
