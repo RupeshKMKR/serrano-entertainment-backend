@@ -19,7 +19,7 @@ app.use(express.json()); // tell the server to accept the json data from fronten
 //Signup and login
 app.use("/api/email", emailRoutes);
 
-app.get("/api/", (req, res) => {
+app.get("/api", (req, res) => {
     res.send("Hello World!");
 });
 
